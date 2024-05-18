@@ -15,41 +15,30 @@ Tech Stack
 Installation
 Clone the repository:
 
-sh
-Copy code
-git clone https://github.com/your-username/notesapp.git
+git clone https://github.com/DocZeus/notesapp.git
 cd notesapp
 
 Backend Setup:
 
-sh
-Copy code
 cd backend
 npm install
 
-Create a .env file in the backend directory and add the following:
+Create a config.json and .env file in the backend directory and add the following:
 
-makefile
-Copy code
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
+"connectionString"=your_mongodb_connection_string in config.json
+ACCESS_TOKEN_SECRET=your_secret_key in .env
 
 Start the backend server:
 
-sh
-Copy code
 npm start
 
 Frontend Setup:
 
-sh
-Copy code
-cd ../frontend
+cd ../frontend/notes-app
 npm install
 
 Start the frontend development server:
-sh
-Copy code
+
 npm run dev
 
 Access the application:
