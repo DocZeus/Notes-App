@@ -26,6 +26,7 @@ npm install
 Create a config.json and .env file in the backend directory and add the following:
 
 "connectionString"=your_mongodb_connection_string in config.json
+
 ACCESS_TOKEN_SECRET=your_secret_key in .env
 
 Start the backend server:
