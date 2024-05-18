@@ -48,10 +48,15 @@ Open your browser and navigate to http://localhost:8000.
 Usage
 
 Sign Up: Create a new account to start using the app.
+
 Create Notes: Click on the "New Note" button to create a note.
+
 Edit Notes: Click on any existing note to edit.
+
 Delete Notes: Click the delete icon to remove a note.
+
 Search Notes: Use the search bar to find specific notes.
+
 
 Contributing
 
