@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+<!-- Background card with tilt -->
+<g transform="rotate(-10, 80, 100)">
+    <rect x="20" y="20" width="120" height="160" rx="10" ry="10" fill="#e0e0e0" stroke="#d0d0d0" stroke-width="2"/>
+</g>
+<!-- Foreground card -->
+<rect x="40" y="40" width="120" height="160" rx="10" ry="10" fill="#ffffff" stroke="#d0d0d0" stroke-width="2"/>
+<!-- Black rectangle -->
+<rect x="50" y="60" width="40" height="20" fill="#000000"/>
+<!-- Grey rectangles -->
+<rect x="50" y="100" width="70" height="15" fill="#d0d0d0"/>
+<rect x="50" y="125" width="50" height="15" fill="#d0d0d0"/>
+<!-- Plus sign circle -->
+<circle cx="140" cy="160" r="15" fill="#000000"/>
+<!-- Plus sign -->
+<line x1="135" y1="160" x2="145" y2="160" stroke="#ffffff" stroke-width="2"/>
+<line x1="140" y1="155" x2="140" y2="165" stroke="#ffffff" stroke-width="2"/>
+</svg>
