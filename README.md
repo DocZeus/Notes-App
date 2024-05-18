@@ -15,7 +15,7 @@ Tech Stack
 Installation
 Clone the repository:
 
-git clone https://github.com/DocZeus/notesapp.git
+git clone https://github.com/DocZeus/Notes-App.git
 cd notesapp
 
 Backend Setup:
