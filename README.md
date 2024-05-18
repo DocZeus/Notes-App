@@ -16,7 +16,6 @@ Installation
 Clone the repository:
 
 git clone https://github.com/DocZeus/Notes-App.git
-cd notesapp
 
 Backend Setup:
 
@@ -35,7 +34,7 @@ npm start
 
 Frontend Setup:
 
-cd ../frontend/notes-app
+cd frontend/notes-app
 npm install
 
 Start the frontend development server:
