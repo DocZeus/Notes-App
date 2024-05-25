@@ -290,7 +290,7 @@ app.put("/update-note-pinned/:noteId", authenticateToken, async (req, res) => {
             message: "Interval Server Error",
         });
     }
-})
+});
 
 //Search Notes
 app.get("/search-notes/", authenticateToken, async (req, res) => {
@@ -322,7 +322,7 @@ app.get("/search-notes/", authenticateToken, async (req, res) => {
             message: "Internal Server Error",
         })
     }
-})
+});
 
 app.listen(8000);
 

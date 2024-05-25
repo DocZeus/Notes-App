@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import ProfileInfo from '../Cards/ProfileInfo'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import SearchBar from '../SearchBar/SearchBar';
+import PasswordInput from '../Input/PasswordInput';
 
 const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
 
     const [searchQuery, setSearchQuery] = useState('');
     const navigate = useNavigate();
+    const location = useLocation();
+
+    console.log('Current location:', location.pathname);
 
     const onLogout = () => {
         localStorage.clear();
@@ -14,7 +18,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
     };
 
     const handleSearch = () => {
-        if (searchQuery){
+        if (searchQuery) {
             onSearchNote(searchQuery)
         }
     }
@@ -22,6 +26,10 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
     const onClearSearch = () => {
         setSearchQuery('')
         handleClearSearch()
+    }
+
+    if (location.pathname === '/login' || location.pathname === '/SignUp') {
+        return null;
     }
 
     return (
@@ -36,7 +44,6 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
                 handleSearch={handleSearch}
                 onClearSearch={onClearSearch}
             />
-
             <ProfileInfo userInfo={userInfo} onLogout={onLogout} />
         </div>
     )

@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { validateEmail } from '../../utils/helper';
 import axiosInstance from '../../utils/axiosInstance';
 
-const SignUp = () => {
+const SignUp = ({ isDarkMode }) => {
 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -22,18 +22,18 @@ const SignUp = () => {
             return;
         }
 
-        if (!validateEmail(email)){
+        if (!validateEmail(email)) {
             setError("Please enter a valid email address");
             return;
         }
 
-        if (!password){
+        if (!password) {
             setError("Please enter a password");
             return;
         }
 
         setError('')
-        
+
         //SignUp API Call
         try {
             const response = await axiosInstance.post("/create-account", {
@@ -65,7 +65,7 @@ const SignUp = () => {
     return (
         <>
             <Navbar />
-            <div className='flex items-center justify-center mt-28'>
+            <div className={`flex items-center justify-center mt-28 ${!isDarkMode ? 'text-black' : 'text-black'}`}>
                 <div className='w-96 border rounded bg-white px-7 py-10'>
                     <form onSubmit={handleSignUp}>
                         <h4 className='text-2xl mb-7'>SignUp</h4>
