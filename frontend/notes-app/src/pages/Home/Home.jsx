@@ -12,7 +12,7 @@ import EmptyCard from '../../components/EmptyCard/EmptyCard'
 import AddNotesImg from '../../assets/images/add-notes.svg'
 import NoDataImg from '../../assets/images/no-data.svg'
 
-const Home = () => {
+const Home = ({ isDarkMode }) => {
 
     const [openAddEditModal, setOpenAddEditModal] = useState({
         isShown: false,
@@ -141,7 +141,7 @@ const Home = () => {
         <>
             <Navbar userInfo={userInfo} onSearchNote={onSearchNote} handleClearSearch={handleClearSearch} />
 
-            <div className='container mx-auto'>
+            <div className={`container mx-auto ${isDarkMode ? 'text-black' : 'text-black'}`}>
                 {allNotes.length > 0 ? <div className='grid grid-cols-3 gap-4 mt-8'>
                     {allNotes.map((item, index) => (
                         <NoteCard
