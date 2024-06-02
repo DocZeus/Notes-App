@@ -4,6 +4,8 @@ Features
 2. CRUD Operations: Create, read, update, pin and delete notes with ease.
 3. Search Functionality: Quickly find notes with the search feature.
 4. Tagging and Categorization: Organize notes with tags and categories.
+5. Dark Mode: Easy on the eyes at night.
+6. Password Checker: So that you build a strong password.
 
 Tech Stack
 
