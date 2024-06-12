@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import ProfileInfo from '../Cards/ProfileInfo'
 import { useLocation, useNavigate } from 'react-router-dom'
 import SearchBar from '../SearchBar/SearchBar';
-import PasswordInput from '../Input/PasswordInput';
 
 const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
 
@@ -28,7 +27,7 @@ const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
         handleClearSearch()
     }
 
-    if (location.pathname === '/login' || location.pathname === '/SignUp') {
+    if (location.pathname === '/login' || location.pathname === '/SignUp' || location.pathname === '/') {
         return null;
     }
 

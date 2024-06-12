@@ -32,10 +32,12 @@ const Home = ({ isDarkMode }) => {
 
     const navigate = useNavigate();
 
+    //Edits
     const handleEdit = (noteDetails) => {
         setOpenAddEditModal({ isShown: true, data: noteDetails, type: "edit" });
     }
 
+    //Toast Message
     const showToastMessage = (message, type) => {
         setShowToastMsg({
             isShown: true,
